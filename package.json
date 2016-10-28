@@ -1,0 +1,38 @@
+{
+  "name": "vue-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server/server.js",
+  "scripts": {
+    "start": "babel-watch --watch ./src/server ./src/server/server.js --presets es2015",
+    "server": "babel ./src/server/server.js -o ./dist/server.js --presets es2015",
+    "test": "mocha ./test/**/*.spec.js"
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "js-md5": "^0.4.1",
+    "jsonwebtoken": "7.1.9",
+    "nedb": "1.8.0",
+    "vue": "2.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.16.0",
+    "babel-watch": "2.0.3",
+    "babelify": "7.3.0",
+    "browserify": "13.1.0",
+    "chai": "3.5.0",
+    "chai-http": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-uglifyjs": "0.6.2",
+    "gulp-util": "3.0.7",
+    "mocha": "3.1.1",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "6.7.0"
+  }
+}
